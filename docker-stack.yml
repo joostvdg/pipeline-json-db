@@ -1,0 +1,31 @@
+#docker compose version. 3.x+ is required for stack
+version: "3.1"
+
+#service definitions
+  db:
+services:
+    image: jvdg-pl-jsondb-image
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          memory: 150M
+    ports:
+      - "3000:3000"
+    networks:
+      - proxy
+    labels:
+      - com.df.notify=true
+      - com.df.distribute=true
+      - com.df.servicePath=/jsondb
+      - com.df.port=3000
+      - com.df.xForwardedProto=true
+      - com.docker.stack.namespace=json-db
+
+
+#network definitions
+networks:
+  proxy:
+    external: true

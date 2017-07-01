@@ -1,0 +1,10 @@
+{
+  "name": "json-db",
+  "version": "1.0.0",
+  "description": "Simple json db for usage with pipelines.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "author": "Joost van der Griendt <joostvdg@gmail.com>",
+  "license": "ISC"
+}

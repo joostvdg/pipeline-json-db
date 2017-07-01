@@ -1,0 +1,15 @@
+{
+    "builds": [
+        {   
+            "id": 0,
+            "buildType": "",
+            "pipelineName": "",
+            "applicationNamespace": "",
+            "applicationId": "",
+            "jobName": "",
+            "jobUrl": "",
+            "branch": "",
+            "scmUrl": ""
+        }
+    ]
+}
